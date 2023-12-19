@@ -2,7 +2,6 @@ import logging
 from aiogram import executor
 from aiogram import Bot, Dispatcher, types
 import requests
-from datetime import datetime
 import markups as nav
 from config import TOKEN
 
@@ -17,7 +16,6 @@ birja = requests.get('https://www.cbr-xml-daily.ru/daily_json.js').json()
 ls_names = birja['Valute'].keys()
 lsq = []
 for i in ls_names:
-    #lsq.append([birja['Valute'][i]['CharCode'], birja['Valute'][i]['Name'], birja['Valute'][i]['Value']])
 	lsq.append(f"{'/'+birja['Valute'][i]['CharCode']} - {birja['Valute'][i]['Name']}")
 print(lsq)
 
