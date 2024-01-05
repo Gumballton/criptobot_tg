@@ -1,17 +1,8 @@
+#Клавиатура бота
+
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 btnMain = KeyboardButton("ГЛАВНОЕ МЕНЮ")
 # main menu
-
-btnSub = KeyboardButton('♥ ПОДПИСКА')
-mainMenu = ReplyKeyboardMarkup(resize_keyboard = True)
-mainMenu.add(btnSub)
-
-
-sub_inline_markup = InlineKeyboardMarkup(row_width=1)
-
-btnSubMonth = InlineKeyboardButton(text='Месяц - 150 рублей', callback_data='submonth')
-
-sub_inline_markup.insert(btnSubMonth)
 mainMenu = KeyboardButton('📈 ВАЛЮТЫ')
 mainMenu1 = KeyboardButton('📈 КРИПТОВАЛЮТЫ')
 mainq = ReplyKeyboardMarkup(resize_keyboard = True).add(mainMenu1, mainMenu)
