@@ -4,4 +4,3 @@
 Версия 2.0
 
 
-![Image alt](https://imgur.com/a/rdqux9n)
